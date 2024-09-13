@@ -6,7 +6,7 @@ import nodeResolve from '@rollup/plugin-node-resolve'
 
 export default [
     {
-        input: 'src/main.ts',
+        input: 'dist/main.js',
         output: [
             {
                 name: 'qi-utils',
@@ -27,7 +27,7 @@ export default [
         plugins: [
             nodeResolve(),
             commonjs(),
-            typescript(),
+            // typescript(),
             terser({
                 compress: true,
                 format: {

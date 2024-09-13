@@ -10,8 +10,15 @@
   "types": "./types/main.d.ts",
   "scripts": {
     "build": "pnpm run clean && tsc && rollup -c",
-    "push": "npm version patch && npm publish --registry=http://localhost:4873",
+    "push": "npm version patch && npm publish",
     "clean": "node ./scripts/clean.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xxxx"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   },
   "license": "ISC",
   "files": [
