@@ -30,7 +30,7 @@ export class EventBus {
    * 绑定事件，触发一次后移除
    */
   once(eventName: string, callback: EventHandler) {
-    const newHandler = (...params) => {
+    const newHandler: EventHandler = (...params) => {
       callback(...params);
     };
     newHandler._origin = callback;
