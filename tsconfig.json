@@ -1,10 +1,13 @@
 {
-    "compilerOptions": {
-        "rootDir": "./src",
-        "outDir": "./dist",
-        "target": "ESNext",
-        "moduleResolution": "Node",
-        "declaration": true,
-        "declarationDir": "./types"
-    }
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "declarationDir": "./types"
+  }
 }
